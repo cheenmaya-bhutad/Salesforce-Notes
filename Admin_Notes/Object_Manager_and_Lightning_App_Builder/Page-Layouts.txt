@@ -1,0 +1,26 @@
+What are lightning pages?
+    Lightning pages are collection of lightning components which are arranged in various places in the page, We can structure the page and set the components from scratch or edit the existing ones using lightning app builder.
+    Other is we can edit the content in the page such as fields and actions using page layout editor, We can manage this for both classic UI and lightning experience.
+
+Why there are 2 such tools available?
+    Because we cannot edit the content in the page components such buttons, action and fields with lightning app builder.
+
+What can we edit using page layout editor?
+    We can determine which fields appear in page layout, whether they are visible, read only or required, order of the fields.
+    Determine the related lists to be displayed for the object.
+    The links must appear in the pages.
+    The buttons appear on the record page and related lists.
+    The quick actions which appear on the page.
+
+What are related tab and details tab for a page layout?
+    Related Tab : This tab contains all the related list for the object, the lists contains various object records related to the record of the object user is viewing.
+    Detail Tab : This tab shows the details for the record. 
+
+What is the hightlight panel in page layout editor indicate?
+    Highlight panel in page layout editor indicates the the highlight panel which is available in the salesforce classic pages. This section is not available in the lightning experience.
+
+Optional:
+Each Custom object when created has a default page layout.
+Each Object can have multiple page layouts.
+We can assign each user profile a seperate page layout as well.
+In page layout editor we can create a new layout by cloning a already existing layout.

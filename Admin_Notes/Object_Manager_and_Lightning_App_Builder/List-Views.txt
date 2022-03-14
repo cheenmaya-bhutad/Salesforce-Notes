@@ -1,0 +1,8 @@
+When creating a new list view what are the available options to set the access?
+    User - Private.
+    All users can see the list view.
+    Share the list view with group of users.
+    This can be changed later on using sharing settings in settings for the list view.
+
+What list views is the associated chart available?
+    When we create a list view chart its associated with the object. The chart is available with any list view that user has permission to see for that object, except recently viewed list.

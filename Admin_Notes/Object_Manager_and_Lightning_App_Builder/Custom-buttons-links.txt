@@ -1,0 +1,8 @@
+What can custom links do?
+
+What can custom buttons do?
+
+Where can we add this custom links and buttons?
+
+How does the salesforce mobile and lightning action section affect detail page buttons visibility?
+
