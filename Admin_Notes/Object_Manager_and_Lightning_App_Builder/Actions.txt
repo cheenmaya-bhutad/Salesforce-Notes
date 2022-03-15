@@ -1,0 +1,8 @@
+What are two types of actions we can perform in the quick actions?
+
+What are several Type of object-specific actions?
+
+What is action layout editor?
+
+What happens before and after overriding the salesforce mobile and lightning action sections?
+
