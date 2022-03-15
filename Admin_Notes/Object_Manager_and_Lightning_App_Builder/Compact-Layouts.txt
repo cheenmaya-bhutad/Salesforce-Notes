@@ -1,0 +1,11 @@
+What is the function of Compact Layouts?
+    Compact layout determine the fields that can be seen in the highlight panel at the top of object records. 
+    They also determine the fields which are available in the expaneded lookup card when one hovers over the link in records detail section.
+
+What are benefits of compact layout?
+    We can include key fields of information about the object record in the compact layout to glance the important information.
+    In Salesforce mobile application where the size is small compact layout can give the idea for what the info object record contains.
+
+Optional :
+Each object has a one or more compact layout.
+When a custom object is created it is assigned a custom compact layout by default which has only one field : object name.

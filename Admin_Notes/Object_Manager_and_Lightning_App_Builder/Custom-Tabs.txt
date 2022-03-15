@@ -1,0 +1,6 @@
+What is the use of Custom Tabs in salesforce?
+Custom tabs allows access to a custom object data in salesforce application. Without this we cannot access the object data in any application. The apps which will have this tab can be defined either when the tab is created and can be edited afterwards as well.
+
+ 
+
+

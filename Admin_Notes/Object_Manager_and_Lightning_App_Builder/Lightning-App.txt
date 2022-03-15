@@ -1,0 +1,34 @@
+What are custom application?
+    Custom application is a set of objects,field and other functionalities which together support a business process. (context of lightning experience).
+
+What can be included in the lightning app?
+    Most of the standard objects along with Home, Chatter feed, Groups and People.
+    Org's custom objects.
+    Visualforce Tabs.
+    Lightning component Tabs.
+    Web Tabs.
+
+What can we do with the navigation bar in lightning app?
+    We can access the various objects via the tab names mentioned in the nav bar.
+    We can access the recent records,list of records and complete actions using single click.
+    We can customize it to our preference.
+
+What does visible in lightning mean?
+    There are 2 types of apps: Classic and Lightning.
+    If the lightning column in checked for a lightning type app then this can be accessed in lightning experience via app launcher and is fully functional.
+    For classic if they are not checked in the lightning column then they cannot be opened in the lightning experience but are available in classic UI. Whereas if they are checked then they can be accessed in the lightning experience but they don't take advantage of application enhancements that lightning experience offers.
+
+What are the customization we can do while creating a lightning app?
+    We can set a image,gif as logo and set primary color for branding.
+    We can set the navigation(standard or console) and form factor(desktop,phone,both ; this will set where this app is available in device wise).
+    Add various utility items to improve productivity(this are visible in the utility bar at the bottom).
+    Set the navigation bar items.
+    Set the user profiles that can acces the app.
+
+What are the tips for creating applications?
+    Conduct the research for required common items for each user profiles.
+    The common ones can be kept at top and less common can either be kept at last or removed entirely.
+
+
+
+ 
