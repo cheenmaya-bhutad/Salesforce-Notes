@@ -1,0 +1,7 @@
+What are points to remember when writing formulas?
+
+What is cross object formula?
+
+What is power of one?
+
+List the common syntax errors and explain them.
