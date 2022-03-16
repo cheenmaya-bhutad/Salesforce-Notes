@@ -1,0 +1,12 @@
+--> We can change the labels for tabs in standard objects using rename tabs and labels option. 
+    The API name remains intact.
+
+--> Lookup filters limit the records available in lookup. 
+    This filter are specific to lookup relationship fields.
+    Lookup filters can search other fields on current reecord,fields on target object(lookup object), on records directly related to the target object record,user records fields as well.
+Example:
+    Consider case object record. This has a field Contact name which indicates lookup relationship with Contact Object. Also we can associate a case with Account using the lookup relation field. So here using the condition in lookup filter as 
+                    Condition Name : AccountId equals Case : AccountId (The account Id for the contact asscoiated with the case) 
+    limits the contact now which can be assigned to the case to those which have account same as the account to which the case belongs.
+
+--> Record types are used to determine which business processes, page layouts and picklist values are available to users.
