@@ -1,1 +1,2 @@
 What are validation rules?
+    Validation rules are formula or expressions which result in either true or false. This are used to verify whether the input from user matches the standard specified for valid data input. If the expression results in true then the data entered by the user for the same is not correct. If the expression results in false then the data entered by the user is correct. We can also display an error message for the same on the top of the page or on a choosen field on the same page.

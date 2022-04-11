@@ -1,4 +1,7 @@
 What is Roll up Summary field?
+    Roll up summary field is field defined on the master object in a master detail relationship where we can calculate the summary of the field on all or some of the associated detail records. The master detail relationship is the required component for this.
 
-Name the type of summaries we can do?
+Name the type of summaries we can do?   
+    We can define count, sum, max and min type of summaries.
+    In case of sum we can choose the field to aggregate as currency, percent and number types. For max and min we can take we can choose number,currency,percent,date and date/time fields to aggregate.
 

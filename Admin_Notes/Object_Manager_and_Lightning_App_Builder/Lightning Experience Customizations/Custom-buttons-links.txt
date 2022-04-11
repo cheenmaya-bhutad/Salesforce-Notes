@@ -1,8 +1,16 @@
 What can custom links do?
+    Custom links are used to connect to external URLs such website, visualforce pages.
 
 What can custom buttons do?
+    Custom buttons are used to connect to external applications such as web pages, launch links.
 
 Where can we add this custom links and buttons?
+    We can add links and buttons in 3 ways : list button, detail page link and detail page button.
+    
+    List button -> This button can be added in a related list section for an object record. If this button is to be displayed on the object A related list section of object B (object B is the lookup object) then the button must be created for object B and added in object A page layout respective related list section.
 
-How does the salesforce mobile and lightning action section affect detail page buttons visibility?
+    Detail Page Link -> This link can be added in the details tab of the page layout in the custom links section.
+
+    Detail Page Button -> This button can be custom action section of the page layout.
+
 

@@ -1,0 +1,7 @@
+What are the ways to create a Record page?
+    We can create a record page in three ways -> create from scratch using template, clone from exisitng record page and edit the existing page.
+    Record page is available for both desktop and salesforce mobile app.
+
+What are the ways to activate Record Page?  
+    We can activate the page in 3 ways -> set as org default, app specific , app and record type and profile and form factor specific.
+    In the form factor specific we can specify the page as desktop or mobile or desktop and mobile specific.

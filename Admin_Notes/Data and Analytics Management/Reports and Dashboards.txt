@@ -1,0 +1,152 @@
+To create a report it usually serves the question being answered. To answer this particular busines question we need to break it down to smaller questions which we ask again in order to get the requirements and criteria required for creating a report.
+
+Example : 
+Say we are asked to create a report about our bestselling product so to answer this in a report we start by asking counter questions such ask
+    1)What makes the product best selling quantity or revenue
+    2)What is the range to be considered for the selling activity
+    3)Should we consider products that are not active anymore as well
+and more
+
+This helps us build the required criteria to select the type of report we will generate in order to present to business.
+
+                                                                            Basic Concepts
+
+Report :-
+
+> Report is list of records which fit a criteria. On this list we can further filter this records, group them to summarize or perform some math to get required calculations.
+> Reports are stored in folders. Based on the access to folders we can either view, edit or manage the content of folders. The folders can be either public, hidden or shared. The access to the folders is determined by roles,permissions,public groups,territories and license types. 
+
+Report Type :-
+
+> Report type determine what type of object records and fields will be available in the report created from this report type. We have standard report types which we cannot edit and we can also create a custom report type. (Consider this as a template to create reports)
+> In order to create a custom report type we have to determine and set the object relationships and field layout.
+
+    Object relationships : This refers to the relationship which determines what type of object records will be allowed for a report created with this report type. Here we determine relationship between a primary object and related object(to the primary object). We can set this relationship level to 3 levels down as shown below
+
+    Primary object -> related object 1 -> related object 2 -> related object 3
+                      (Primary of obj2)   (Primary of obj3)
+    
+    Here the object 1 acts as primary and allows only its related object in related object 2. This will be applied to related object 2 as well.
+
+    Between a primary and related object we can configure the relationship as with | with or without. 
+    
+    Case : with -> This will allow only primary object records in the report with atleast one related object record associated. (In set theory this is A intersection B)
+    Case : with or without -> This will allow primary objects in the report who may or maynot have a associated related object record. (In set theory this is A union B - B + A intersection B)
+
+    So the above relationship level diagram changes to
+
+                                            level 1                                   level 2                                   level 3            -> total = 4
+    Primary object (with | with or without) related object 1 (with | with or without) related object 2 (with | with or without) related object 3
+                                            (Primary of obj2)                         (Primary of obj3)
+
+    Field Layouts : This determines what fields we can allow to the report type. It depends on the user to determine what fields he needs. Also in case of above object relationship we can set the fields for the both primary and related object which will be allowed in the report type for display.
+
+> After choosing a report type we can filter the records in the report which we are creating using filters. 
+
+Filter Types :- 
+
+> The filter are of mainly 3 types - Field filters, Cross object filters and Standard filters.
+> Field filters are applied on a specific field which are combination of field, operator and value.
+In case of multiple field filters we can combine them in expression using the boolean fucntions such as AND, OR and NOT. This refers to filter logic.
+> Standard filters are filters that are already present for all report types and these filters vary according to the primary object of the report type. 
+Created By and Show me are the standard filters are common to each report type. 
+Created Date gives the various range to filter the records against their creation date while Show me filter allows to choose the accounts for specific user or owner or all account records.
+> Cross Object Filters allows to create a specific relationship in the report itself for the primary object with a related object using the configuration of with | without. Then we can apply field filters on the filters of related object (This is known as subfilters) to further filter the records in the report.
+This relationship will be only applied to the primary object in the report type. 
+Even if a relationship is already is defined we can use cross object filters. 
+Filter logic is not applied on cross object filters.
+Primary use case is for exception's report.   
+
+Example on Cross object filters : 
+Say we have report with primary object of accounts with some records in it. Now we want to filter only those account records which have opportunitiy records with name amount greater than k. So we can create a cross object filter which defines a relationship between the account and opportunity (configuration - with) and then apply filter on opportunity amount field to filter records with amount greater than k. This will filter the records.
+
+Question : Why create a report type when we have cross object filters to implement object relationship?
+Answer : 1) We have to create the relationship with cross object filter everytime.
+2) We cannot implement this upto 4 levels
+3) We cannot implement with or without as this can be useful in some cases. 
+
+> Once we have filtered and got the final list of records we can format the report to one of the types for the presentation.
+
+Report Formats :-
+
+> The main report formats are tabular, summary and matrix report format.
+> Tabular refers to the list of records.
+> Summary refers to grouping the records based on field either row or column wise. This is the most used format for reporting. On summary we can see the subtotats and totals fields whose type depends on the field used for grouping.
+> Matrix refers to grouping the records on fields on both row and column. This takes most time for creation but also presents the data in detailed manner.
+
+> We can create report charts for summary and matrix report format and use them as dashboard components. In case we limit the tabular report format with row limit then we can use it as dashboard component.
+
+Dashboards :-
+
+> Dashboard are used to visualize the key metrics and trends in the reports. 
+> They are made of components where each component has one report source.
+> Dashboards are also stored in folders. If we have access to folder then we can see the dashboards and to see the component the user must have access to the underlying report.
+> We cannot use a joined report type and historical trend report as report source in the dashboard.
+> The report data can be visualized in various ways which can be divided into 4 ways - charts, gauge(Used to display the data in a range), metric(display the data in numbers) and table(display the data as table).
+> For the components we can use the same report as source displaying in various formats.
+> Once the dashboard is completed we can set the running user as either of these options 
+    
+    Me : Here the user currently setting the view will be used. So the data displayed on the dashboard will be according to the security settings of this user and other viewers will also see the data according to how this user will view it.
+    Another user: Here we can decide upon the person whose security settings will determine the data access for the data displayed on the dashboard for the viewers.
+    Dynamic Dashboards: When we set the running user as the logged in user then each user will see the data access according to his security settings. Such type of dashboards are called as dynamic dashboards. 
+
+        Constraints associated with dynamic dashboards are : 
+        1) We cannot refersh the dynamic dashboard automatically. It must be done manually.
+        2) We cannot store the dashboards in private folder.
+        3) We cannot follow the component on dashboards (What does this mean exactly)
+
+    We can also use the option "Let the dashboard viewers decide who to view the dashboard as" which allows the reader with permission "View my Team's Dashboard" to view the dashboard as himself or person below him in heirarchy.
+
+> For Dashboard component we can also set the report chart if it is defined in the report itself.
+
+Features of Report Builder :
+
+Bucket Columns : Allows us to create new categories to filter the records based on a field present in the report. Say for example if the field in case is amount and we want to filter records on range of amount values. we can create a bucket column where we can create categories for the amount value ranges to filter records according to the categories. This new bucket column will be added to the report.
+
+Summary column : Summary column allows us to create additional summaries on the numerical values of the report. We can summarize the column on sum, max and min. We can also add 5 summary columns to summary ,matrix reports and this will be added as a column to the report.
+
+Advantages and Disadvantages of reports and Dashboards :
+1) Visibility into data :- 
+What? -> It refers to the ability to view the key insights in the data 
+Why? -> Because it helps us analyse the data and take good decisions (for business by managers)
+
+2) Time Savings
+What? -> Helps to quickly filter the records we want to look into instead of going through the records to search for the criteria.
+
+3) Flexibility
+What? -> We have the ability to set the filters to get the records in the report.
+
+Access to reports and Dashboards folders :
+What? -> While setting the folders to create a report and dashboards we can share the access to the folders to other users as either view, edit and manage.
+
+Features                                                                        
+
+View the reports and Dashboards in the ---------------------> View
+reports and dashboards folders.
+
+View the access level for other users for --------------------------> View 
+the same folder.
+
+Save a report or dashboard in reports and ---------------------------> View,Edit
+dashboards folder.
+
+Change the name of report and dashboard in ---------------------------> View,Edit
+reports and dashboards folders.
+
+Delete the report or dashboard in reports ---------------------------> View,Edit
+and dashboards folders.
+
+Share the folder. ---------------------------> View,Edit,Manage
+
+Change the name of the folder. ---------------------------> View,Edit,Manage
+
+Change the sharing setting for the folder. ---------------------------> View,Edit,Manage
+
+Delete the folder. ---------------------------> View,Edit,Manage
+
+Notes :-
+We can also export the report in either .csv and .xls format. For the .csv format the report
+formatting will not added such as detail rows, subtotals and grandtotals to the exported file.
+
+
+

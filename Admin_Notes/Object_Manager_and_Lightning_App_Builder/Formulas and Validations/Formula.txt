@@ -1,0 +1,27 @@
+What are points to remember when writing formulas?
+    1) Whitespaces do not matter when writing the formula.
+    2) Fields are case sensitive.
+    3) When working with numbers then standard order of operation applies.
+
+What is cross object formula?
+    When we define a formula which display a another object field in the current object page layout.
+
+What is power of one?
+    power of one is formula field with return type of number with no decimal points and 1 only in formula. We can define the power of one on any object.
+Example:
+    Say we got the opportunities associated with contact names. Now we want to find the unique contact users in a list of opportunities then we can create a power of one field on the contact object and use that in report as column field. Then we can summarize on this field on this column with sum to get the unique count.
+
+List the common syntax errors and explain them.
+    Missing paranthesis : This error is also displayed in case we miss comma between the parameters.
+    Invalid Return type 
+    Invalid Number of Parameters provided
+    Specified field does not exist
+    Parameter data specified is not correct type : This error will be also shown in case when we do not specify the text literal and url in quotes.
+
+    Correct :
+    Missing parantheses : This error is also displayed if we miss comma between parameters.
+    Invalid parameter type
+    Invalid number of parameters provided
+    Specified field does not exist: This error is also shown when we miss to use quotes to cover the text literal or hyperlinks.
+    Invalid return type.
+    Unknown function.

@@ -1,0 +1,2 @@
+What are some of the ways to make the pages dynamic?
+    We can set the pages dynamic using the visibility filters. Here we can define the logic for the filter to become true which will then display the component on the screen making it seem dynamic. The component until this point remains invisible. This can be done on standard, custom and third party components from appexchange. We can also set the components to device type so that certain components are visible on the mobile or desktop.

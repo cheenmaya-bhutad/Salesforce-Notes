@@ -1,0 +1,7 @@
+What are the ways to create Home Lightning page?
+    We can create a Home Lightning page using 3 ways -> create from scratch using template, clone from existing home page and edit the existing page.
+    When we edit the existing page we edit a copy of the same page. If we have already have customized the page before the same page is opened for editing in the lightning app builder. If we edit the page for the first time then a copy of the standard page is created which we will be editing. This page stores the references to the standard page and when features of updates are applied to the standard page the same are also applied to the edited page. In case of creating a page from scratch such updates are not applied.
+    Home page is only available for the lightning experience.
+
+What are the ways to activate the home lightning page?
+    We can activate the home lightning page in three ways : Set as org default, App specific and App & Profile combination.

@@ -10,3 +10,5 @@ Example:
     limits the contact now which can be assigned to the case to those which have account same as the account to which the case belongs.
 
 --> Record types are used to determine which business processes, page layouts and picklist values are available to users.
+
+--> Lightning aura components and web components can coexist and interoperate on the same page.

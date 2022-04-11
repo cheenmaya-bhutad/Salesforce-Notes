@@ -1,0 +1,48 @@
+An automation tool in saleforce is used to configure the internal process to be automated to save time across the orgs.
+
+In order to determine which tool we should use depends on the business process to be automated.
+
+Different type of automation tools in saleforce are - 
+workflow ---> workflow rules
+process builders ---> processes
+flow builders ---> flows 
+approval processes ---> apporvals
+
+General types for business process :-
+1) Getting the approval for a process - When we require an approval for a process in salesforce we can use approval process.
+
+2) Perform some process based on data of salesforce - When we have to automate a process which should be triggered based on criteria on the data in the salesforce then we can use 
+process builders, workflows and flow builders.
+In increasing range of complexity of business process the tools to be used are -> workflows -> process builders -> flow builders
+
+3) Taking the input from users for the process - Flow builder is the most useful tool for this case. Here we can create a flow that takes the user through different screens or record page screens to take the user input.
+Example: Call script for salespersons.
+
+Features of tools :-
+Flow builder: 
+Complexity - complex,
+Support the time based action - yes
+Support user interaction - yes
+Can be called - By clicking the links and buttons; Through a lightning screen,Visualforce page and custom tab; from other flow; called from apex
+
+Actions supported:
+Call apex code - yes
+create records,delete records - yes
+launch flow - yes
+send custom notification - yes
+send outbound message without code - yes
+send mails - yes
+post to chatter - yes
+update fields - any record
+
+
+Approvals:
+Compelexity - a single if/else statement
+Can be called - By clicking the links and buttons, from other flows with submit for approval action, called from apex
+
+Actions supported:
+Call apex code - supported
+create records - tasks only
+send emails - yes(email alerts only)
+update fields - record or its parent
+send outbound message without code - yes

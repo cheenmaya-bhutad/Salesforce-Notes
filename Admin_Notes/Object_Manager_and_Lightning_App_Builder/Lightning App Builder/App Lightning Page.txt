@@ -1,0 +1,2 @@
+What are the ways to activate a App Lightning page?
+    The app lightning page activation has slightly different procedure. Here for the app we can set the label for the app page seperately. By default its the same as the name given when the page is created. We can set the profiles who access to the app page. Next we can set all the apps where we can add this page in the lightning experience. In the mobile app we can set the position of the app page.

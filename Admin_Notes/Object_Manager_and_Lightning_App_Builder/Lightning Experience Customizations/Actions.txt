@@ -1,8 +1,23 @@
 What are two types of actions we can perform in the quick actions?
+    The 2 types of actions we can perform in quick actions are object specific action and global action.
+
+    Object specific action -> This type of action creates a automatic relationship with object record where the action is defined. This action is specific to the object page layout.
+
+    Global Action -> This type of actions is not related to any specific object record and can be accessed without leaving the current page layout. This action can be accessed in the global publisher layout.
 
 What are several Type of object-specific actions?
+    Create record -> Creates a record which will have relatonship with current object record.
+    Update record -> We can specify the fields we want to update.
+    Log a call -> We can log details about the call, meetings and event with a specific object record.
+    Launch Lightning Component, Visualforce pages, Flows -> We can perform this actions which will allow us to perform actions on records related with current object record.
+    Send Email -> This action is specific to the case object.
 
 What is action layout editor?
+    This is the layout editor which is presented after we define the configuration of action. Here we can specify the fields which are needed to complete the action. By default in case of creating record the required fields are populated since without this fields populated we cannot complete the action. We can edit this later as well.
 
 What happens before and after overriding the salesforce mobile and lightning action sections?
+    Before: This action will contain actions present in default action section along with the custom and standard buttons.
+    After: After overriding we need to add the actions and buttons explicitly if we need to access this in the page layouts. 
+
+    In the page layout the actions and buttons are placed together. So the actions are buttons. 
 

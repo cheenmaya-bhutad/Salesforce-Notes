@@ -1,0 +1,24 @@
+What is lightning App Builder?
+    Lightning app builder is a point and click tool used to create custom pages for lightining experience and salesforce mobile app.
+    
+    Correction :
+    Lightning app builder is a point and click tool used to create custom pages in salesforce for lightining experience and salesforce mobile app. When we edit an application in salesforce we are directed to lightning app builder.
+
+What is lightning pages?
+    Lightning pages are custom layout which are made of elements which are structured and placed in different regions of the page.
+
+What are lightning templates?
+    Lightning templates are templates which come with a prebuilt layout. They will adjust according to the device on which the page is viewed.
+
+What are lightning components?
+    Lightning components are compact, configurable and reusable components which can be used in the lightning page. They can be standard, custom and third party ones from the appexchange. The lightning components are dekstop or desktop and mobile specific.
+
+What are some of the functions of header and toolbar?
+    Header -> When editing a page it shows the list of last 10 pages edited in the lightning app builder. In case of editing the app we change the configurations of the app such nav bar items, utility items and such and also the list of active lightning pages associated with the app.
+    Toolbar -> In this we can redo, undo, copy, cut, paste, save and activate the page. We can also view the page to device specific.
+
+What are the types of lightning pages?
+    There are 3 types -> App page, Home page and Record page.
+    App page -> App page is like a home page to an app and can serve a specific purpose.
+    Home Page -> Home page is available in every app where we can put the info for everyday use of the users. This page is only available for the lightning experience.
+    Record Page -> Here we can set the customized layout for the object record page.
