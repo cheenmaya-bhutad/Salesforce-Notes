@@ -1,0 +1,29 @@
+Flow Builder :- 
+Flow builder is the tool present in the salesforce flow product to create flows.
+Flow is an application which can take input from user, call apex methods, perfrom some logic and interact with database.
+
+Components of Flows:
+Elements -> Individual components of flow.
+Connectors -> Connector allows us to connect the elements in the flow and decide the path the flow follow at runtime.
+Resources -> This are the containers to store the values which we can reference later in the flow.
+
+Components of Flow Builder:
+Canvas -> Where the flow is created in the visual form.
+Toolbox -> Where we can find the elements, resources to be added in the flow.
+Action bar -> Where we can check status of flow, activate it other actions such cut and copy elements
+
+Types of elements:
+Screen element -> This element allows us to create a way to take user input. We can either add standard buttons or create a lightning component for custom input format.
+Example -> For sales people we create a call script that takes user through multiple screens to take various types of input.
+
+Logic element -> This element allows us to perform logic operations, loop through records, make decisions based on record data and more.
+
+Action element -> This element allows us to perform various operations such crud and we can also call apex code when in case of custom action which is not covered by flow builder.
+
+Integration elements -> Integration elements allow us to connect to external database system with core actions or apex actions.
+
+User permissions for flows:
+Run flows -> allows the user to run flows.
+Manage flows -> allows user with this permission to run inactive flows.
+
+Notes - Flow interview refers to running instance of flow. Each user interacts with individual instances of the flow.

@@ -1,0 +1,17 @@
+Approval Process:
+Approval Process are not part of salesforce flow and these are used to automate the process of how salesforce records are approved in the org. 
+In this we specify 
+1) What steps are involved and who approves on each of this steps
+2) What are the actions to be performed depending on what happens in the approvals steps?
+
+For any approval process we can divide them into this components:
+Initial submission actions
+    This are the actions that are performed when an record is submitted for approval through submit for approval for action. The actions supported are record locking, create a task, send email alerts, field updates. By default the action is record locked as this allows only the approver and admin to make changes to such records.
+
+Steps
+    For each step we can define an entry criteria which determines the entry and user who will approve the record for this step. We can also specify actions for each individual steps for approval and rejection.
+
+Final approvals and rejection actions
+    This are the actions which are performed when all the steps are completed in the approvals. For this as well we can set the same actions as in initial submission actions.
+
+For a single step approval process we can just keep the final approval and rejection actions. Also with flow builder we can use the standard action "submit for approval" which can be used to call approvals.
